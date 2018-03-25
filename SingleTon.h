@@ -6,7 +6,7 @@
 #define EXTRA_CLASE_2_DATOS_SINGLETONE_H
 
 #include "MainWindow.h"
-class SingleTone {
+class SingleTon {
 public:
     static int repetitions;
    static MainWindow* MaincreateWindow();

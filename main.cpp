@@ -1,11 +1,12 @@
 #include <iostream>
 #include <QtWidgets/QApplication>
 #include "MainWindow.h"
-#include "SingleTone.h"
+#include "SingleTon.h"
+#include "FacadeRAM.h"
 #include <QWidget>
 int main(int argc,char* argv[]) {
-    std::cout << "Hello, World!" << std::endl;
     QApplication app(argc, argv);
-    MainWindow* window = SingleTone::MaincreateWindow();
+    MainWindow* window = SingleTon::MaincreateWindow();
+    FacadeRAM::facade();
     return 0;
 }
